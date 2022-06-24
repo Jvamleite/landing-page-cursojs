@@ -17,14 +17,27 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     background-image: url(/assets/img/endless-constellation.svg);
     line-height: 1.5;
     color: var(--white-color);
 }
+section{
+    display: block;
+}
 h1,h2,h3,h4,h5{
     font-family: 'Montserrat', sans-serif;
     
+}
+h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+p{
+    margin-bottom: 3rem;
+    justify-content: center;
 }
 a{
     text-decoration: none;
@@ -96,12 +109,6 @@ a{
     flex-flow: column wrap;
     justify-content: center;
 }
-.pages.page-home div h2{
-    font-size: 6rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
 .home-content .text-content .text{
     font-size: 2.4rem;
     position: relative;
@@ -114,6 +121,24 @@ a{
     top: 5rem;
     left: 15rem;
 }
+.intro-content{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+/*
+.text-content p {
+    max-width: 64rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
 .back-white{
     background-color: var(--white-color);
+    color: var(--primary-color);
 }
