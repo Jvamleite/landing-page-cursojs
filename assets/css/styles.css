@@ -21,6 +21,10 @@ body {
     color: var(--primary-color);
     line-height: 1.5;
 }
+body .full-widht{
+    width: 100%;
+    flex: 1 1 100%;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -120,7 +124,7 @@ p {
     min-height: 100vh;
   }
 .menu-spacing {
-    height: 65px;
+    height: 6.5rem;
 }
 .home-content{
     position: relative;
@@ -134,7 +138,7 @@ p {
     flex-flow: column wrap;
     justify-content: center;
 }
-.home-image-content{
+.image-content{
     max-width: 100%;
     height: auto;
 }
@@ -214,4 +218,64 @@ table td, table th{
     padding: 1rem;
     border: 0.1rem solid var(--light-gray-color);
 }
-
+.contact{
+    position: relative;
+    right: 5rem;
+}
+.contact-form{
+    grid-column: span 2;
+}
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap)
+}
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.form-group{
+    flex: 1 1 32rem;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.form-group input, .form-group textarea{
+    border: none;
+    padding: 1.5rem 2rem;
+    background: var(--white-color);
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+  
+.form-group ::placeholder {
+    color: var(--light-gray-color);
+}
+.footer{
+    text-align: center;
+}
+.footer span{
+    color: red;
+}
+.footer p{
+    margin: 0;
+    padding: 3rem;
+}
