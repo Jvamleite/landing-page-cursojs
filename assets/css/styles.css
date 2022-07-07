@@ -320,25 +320,25 @@ tfoot td, table th {
     width: 100%;
   }
 
-  .grid-one-content {
+  .grid-content {
     display: block;
   }
 
-  .menu {
+  .header {
     bottom: 0;
     text-align: center;
   }
 
-  .menu-content, .menu-content ul {
+  .header-content, .header-content ul {
     flex-direction: column;
     justify-content: center;
   }
 
-  .menu-content {
+  .header-content {
     height: 100vh;
   }
 
-  .menu {
+  .header {
     display: none;
   }
 
@@ -359,12 +359,12 @@ tfoot td, table th {
     cursor: pointer;
   }
 
-  .close-menu:checked~.menu {
+  .close-menu:checked~.header {
     display: block;
   }
 
   .close-menu:checked~.close-menu-label::after {
-    content: '×';
+    content: 'x';
   }
 
   .menu-spacing {
